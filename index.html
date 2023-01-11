@@ -1,164 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Easybank landing page</title>
-  <!-- Custom CSS-->
-  <link rel="stylesheet" href="css/main.css">
-<!-- Google Fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
-<!-- Tailwind CDN-->
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Easybank landing page</title>
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<body class="font-family-sans">
+  <body class="font-family-sans">
     <!-- Navbar -->
     <nav class="container relative mx-auto p-6">
-    <!-- Flex container -->
-    <div class="flex items-center justify-between">
-      <!-- Logo -->
-      <div class="pt-2">
-        <img src="images/logo.svg" alt="" />
-      </div>
-      <!-- Menu Items -->
-      <div class="hidden items-center space-x-6 md:flex">
-        <a href="#" class="hover:text-darkGrayishBlue">Home</a>
-        <a href="#" class="hover:text-darkGrayishBlue">About</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Blog</a>
-        <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
-      </div>
-      <!-- Button -->
-      <a
-        href="#"
-        class="baseline hidden rounded-full bg-gradient-to-r from-limeGreen via-darkBlue to-brightCyan p-3 px-6 pt-2 text-white hover:brightness-125 md:block"
-        >Request Invite</a
-      >
+      <!-- Flex container -->
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="pt-2">
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <!-- Menu Items -->
+        <div class="hidden items-center space-x-6 md:flex">
+          <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Blog</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+        </div>
+        <!-- Button -->
+        <a
+          href="#"
+          class="baseline hidden rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-6 pt-2 text-white hover:brightness-125 md:block"
+          >Request Invite</a
+        >
 
-      <!-- Hamburger Icon-->
-      <button
-        id="menu-btn"
-        class="hamburger block focus:outline-none md:hidden"
-      >
-        <span class="hamburger-top"></span>
-        <span class="hamburger-middle"></span>
-        <span class="hamburger-bottom"></span>
-      </button>
-    </div>
+        <!-- Hamburger Icon-->
+        <button
+          id="menu-btn"
+          class="hamburger block focus:outline-none md:hidden"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
 
-    <!-- Mobile Menu -->
-    <div class="md:hidden">
+      <!-- Mobile Menu -->
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-auto sm:self-center"
+        >
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+          <a href="">Blog</a>
+          <a href="">Careers</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Flex Container -->
       <div
-        id="menu"
-        class="absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-auto sm:self-center"
+        class="container mx-auto mt-10 flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:space-y-0"
       >
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-        <a href="">Blog</a>
-        <a href="">Careers</a>
+        <!-- Left item -->
+        <div class="mb-32 flex flex-col space-y-12 md:w-1/2">
+          <h1
+            class="text-4xl md:text-5xl max-w-md text-center font-bold md:text-left"
+          >
+            Next generation digital banking
+          </h1>
+          <p class="text-darkGrayishBlue max-w-sm text-center md:text-left">
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="#"
+              class="baseline rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-6 pt-2 text-white hover:brightness-125 md:block"
+              >Request Invite</a
+            >
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img src="images/illustration-intro.svg" alt="" />
+        </div>
       </div>
+    </section>
+
+    Why choose Easybank? We leverage Open Banking to turn your bank account into
+    your financial hub. Control your finances like never before. Online Banking
+    Our modern web and mobile applications allow you to keep track of your
+    finances wherever you are in the world. Simple Budgeting See exactly where
+    your money goes each month. Receive notifications when you’re close to
+    hitting your limits. Fast Onboarding We don’t do branches. Open your account
+    in minutes online and start taking control of your finances right away. Open
+    API Manage your savings, investments, pension, and much more from one
+    account. Tracking your money has never been easier. Latest Articles By
+    Claire Robinson Receive money in any currency with no fees The world is
+    getting smaller and we’re becoming more mobile. So why should you be forced
+    to only receive money in a single … By Wilson Hutton Treat yourself without
+    worrying about money Our simple budgeting feature allows you to separate out
+    your spending and set realistic limits each month. That means you … By
+    Wilson Hutton Take your Easybank card wherever you go We want you to enjoy
+    your travels. This is why we don’t charge any fees on purchases while you’re
+    abroad. We’ll even show you … By Claire Robinson Our invite-only Beta
+    accounts are now live! After a lot of hard work by the whole team, we’re
+    excited to launch our closed beta. It’s easy to request an invite through
+    the site ... About Us Contact Blog Careers Support Privacy Policy Request
+    Invite © Easybank. All Rights Reserved
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
     </div>
-  </nav>
-
-<!-- Hero Section -->
-<section id="hero">
-<!-- Flex Container -->
-<div
-  class="container mx-auto mt-10 flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:space-y-0"
->
-  <!-- Left item -->
-  <div class="mb-32 flex flex-col space-y-12 md:w-1/2">
-    <h1
-      class="max-w-md text-center text-4xl font-bold md:text-left md:text-5xl"
-    >
-    Next generation digital banking
-    </h1>
-    <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
-    Take your financial life online. Your Easybank account will be a one-stop-shop 
-    for spending, saving, budgeting, investing, and much more.
-    </p>
-    <div class="flex justify-center md:justify-start">
-      <a
-        href="#"
-        class="baseline rounded-full bg-brightRed p-3 px-6 pt-2 text-white hover:bg-brightRedLight"
-        >Request Invite</a
-      >
-    </div>
-  </div>
-  <!-- Image -->
-  <div class="md:w-1/2">
-    <img src="images/illustration-intro.svg" alt="" />
-  </div>
-</div>
-</section>
-
-
-
-  Why choose Easybank?
-
-  We leverage Open Banking to turn your bank account into your financial hub. Control 
-  your finances like never before.
-
-  Online Banking
-  Our modern web and mobile applications allow you to keep track of your finances 
-  wherever you are in the world.
-
-  Simple Budgeting
-  See exactly where your money goes each month. Receive notifications when you’re 
-  close to hitting your limits.
-
-  Fast Onboarding
-  We don’t do branches. Open your account in minutes online and start taking control 
-  of your finances right away.
-
-  Open API
-  Manage your savings, investments, pension, and much more from one account. Tracking 
-  your money has never been easier.
-
-  
-
-  Latest Articles
-
-  By Claire Robinson
-  Receive money in any currency with no fees
-  The world is getting smaller and we’re becoming more mobile. So why should you be 
-  forced to only receive money in a single …
-
-  By Wilson Hutton
-  Treat yourself without worrying about money
-  Our simple budgeting feature allows you to separate out your spending and set 
-  realistic limits each month. That means you …
-
-  By Wilson Hutton
-  Take your Easybank card wherever you go
-  We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
-  while you’re abroad. We’ll even show you …
-
-  By Claire Robinson
-  Our invite-only Beta accounts are now live!
-  After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
-  It’s easy to request an invite through the site ...
-
-  
-
-  About Us
-  Contact
-  Blog
-  Careers
-  Support
-  Privacy Policy
-
-  Request Invite
-
-  © Easybank. All Rights Reserved
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
 </html>
