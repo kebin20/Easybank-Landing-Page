@@ -205,7 +205,10 @@
 
     <!-- Latest Articles -->
     <!-- Container to heading and testm blocks -->
-    <section class="mt-36 flex flex-col md:flex-row md:space-x-6" id="articles">
+    <section
+      class="mt-36 mb-24 flex flex-col md:flex-row md:space-x-6"
+      id="articles"
+    >
       <!-- Heading -->
       <h2 class="text-4xl text-center text-darkBlue">Latest Articles</h2>
       <!-- Articles Container -->
@@ -296,9 +299,74 @@
       </div>
     </section>
 
-    About Us Contact Blog Careers Support Privacy Policy Request Invite ©
-    Easybank. All Rights Reserved
-  </body>
+    <!-- Footer -->
+    <footer class="bg-darkBlue">
+      <!-- Flex Container-->
+      <div
+        class="container mx-auto flex flex-col justify-between space-y-8 px-6 py-10 md:flex-row md:space-y-0"
+      >
+        <!-- Logo and social links container -->
+        <div
+          class="flex flex-col items-center justify-between space-y-12 md:flex-col md:items-start md:space-y-0"
+        >
+          <!-- Logo -->
+          <div>
+            <img src="./images/logo-white.svg" class="h-6" alt="" />
+          </div>
 
+          <!-- Social Links Container -->
+          <div class="flex justify-center space-x-4">
+            <!--  Link 1 -->
+            <a href="#">
+              <img src="./images/icon-facebook.svg" class="h-6" alt="" />
+            </a>
+            <!--  Link 2 -->
+            <a href="#">
+              <img src="./images/icon-youtube.svg" class="h-6" alt="" />
+            </a>
+            <!--  Link 3 -->
+            <a href="#">
+              <img src="./images/icon-twitter.svg" class="h-6" alt="" />
+            </a>
+            <!--  Link 4 -->
+            <a href="#">
+              <img src="./images/icon-pinterest.svg" class="h-6" alt="" />
+            </a>
+            <!--  Link 5 -->
+            <a href="#">
+              <img src="./images/icon-instagram.svg" class="h-6" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <!-- List Container -->
+        <div class="flex justify-around space-x-32">
+          <div class="flex flex-col items-center space-y-4 text-white">
+            <a href="#" class="hover:text-brightRed">About Us</a>
+            <a href="#" class="hover:text-brightRed">Contact</a>
+            <a href="#" class="hover:text-brightRed">Blog</a>
+            <a href="#" class="hover:text-brightRed">Careers</a>
+            <a href="#" class="hover:text-brightRed">Support</a>
+            <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="flex justify-center md:justify-start">
+          <a
+            href="#"
+            class="baseline rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-11 pt-3 text-white hover:brightness-125 md:block"
+            >Request Invite</a
+          >
+        </div>
+
+        <div class="hidden text-lightGrayishBlue md:block">
+          © Easybank. All Rights Reserved
+        </div>
+        <div class="mx-auto my-6 text-center text-lightGrayishBlue md:hidden">
+          © Easybank. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+  </body>
   <script src="js/script.js"></script>
 </html>
