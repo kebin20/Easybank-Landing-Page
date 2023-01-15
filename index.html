@@ -19,7 +19,7 @@
 
   <body class="font-family-sans overflow-x-hidden text-darkBlue">
     <!-- Navbar -->
-    <nav class="container fixed z-10 mx-auto max-w-none bg-white p-5">
+    <nav class="container fixed z-10 mx-auto mx-auto max-w-none bg-white p-5">
       <!-- Flex container -->
       <div class="flex items-center justify-between md:justify-around">
         <!-- Logo -->
@@ -132,11 +132,11 @@
 
       <!-- List Items -->
       <div
-        class="mx-auto mt-14 flex flex-col space-y-8 md:w-4/5 md:flex-row md:space-y-0 md:w-5/6"
+        class="mx-auto mt-14 flex flex-col space-y-8 md:w-4/5 md:w-5/6 md:flex-row md:space-y-0"
       >
         <!-- List Item 1 -->
         <div
-          class="mx-auto flex flex-col space-y-3 md:flex-col md:items-start md:space-y-4 md:w-5/6"
+          class="mx-auto flex flex-col space-y-3 md:w-5/6 md:flex-col md:items-start md:space-y-4"
         >
           <!-- Heading -->
           <div class="flex flex-col items-center space-x-2">
@@ -318,43 +318,65 @@
       <div
         class="container mx-auto flex flex-col justify-between space-y-8 px-6 py-10 md:flex-row md:space-y-0"
       >
-        <!-- Logo and social links container -->
-        <div
-          class="flex flex-col items-center justify-between space-y-12 md:flex-col md:items-start md:space-y-0"
-        >
-          <!-- Logo -->
-          <div>
-            <img src="./images/logo-white.svg" class="h-6" alt="" />
-          </div>
+        <!-- Desktop Layout-->
+        <div class="md:flex md:gap-x-32">
+          <!-- Logo and social links container -->
+          <div
+            class="flex flex-col items-center justify-between space-y-12 md:flex-col md:items-start md:space-y-0"
+          >
+            <!-- Logo -->
+            <div>
+              <img src="./images/logo-white.svg" class="h-6" alt="" />
+            </div>
 
-          <!-- Social Links Container -->
-          <div class="flex justify-center space-x-4">
-            <!--  Link 1 -->
-            <a href="#">
-              <img src="./images/icon-facebook.svg" class="h-6" alt="" />
-            </a>
-            <!--  Link 2 -->
-            <a href="#">
-              <img src="./images/icon-youtube.svg" class="h-6" alt="" />
-            </a>
-            <!--  Link 3 -->
-            <a href="#">
-              <img src="./images/icon-twitter.svg" class="h-6" alt="" />
-            </a>
-            <!--  Link 4 -->
-            <a href="#">
-              <img src="./images/icon-pinterest.svg" class="h-6" alt="" />
-            </a>
-            <!--  Link 5 -->
-            <a href="#">
-              <img src="./images/icon-instagram.svg" class="h-6" alt="" />
-            </a>
+            <!-- Social Links Container -->
+            <div class="flex justify-center space-x-4">
+              <!--  Link 1 -->
+              <a href="#">
+                <img src="./images/icon-facebook.svg" class="h-6" alt="" />
+              </a>
+              <!--  Link 2 -->
+              <a href="#">
+                <img src="./images/icon-youtube.svg" class="h-6" alt="" />
+              </a>
+              <!--  Link 3 -->
+              <a href="#">
+                <img src="./images/icon-twitter.svg" class="h-6" alt="" />
+              </a>
+              <!--  Link 4 -->
+              <a href="#">
+                <img src="./images/icon-pinterest.svg" class="h-6" alt="" />
+              </a>
+              <!--  Link 5 -->
+              <a href="#">
+                <img src="./images/icon-instagram.svg" class="h-6" alt="" />
+              </a>
+            </div>
+          </div>
+          <!-- List Container (Desktop)-->
+          <div class="flex hidden justify-around space-x-32 md:flex">
+            <div
+              class="flex flex-col items-center space-y-4 text-white md:items-start"
+            >
+              <a href="#" class="hover:text-brightRed">About Us</a>
+              <a href="#" class="hover:text-brightRed">Contact</a>
+              <a href="#" class="hover:text-brightRed">Blog</a>
+            </div>
+            <div
+              class="flex flex-col items-center space-y-4 text-white md:items-start"
+            >
+              <a href="#" class="hover:text-brightRed">Careers</a>
+              <a href="#" class="hover:text-brightRed">Support</a>
+              <a href="#" class="hover:text-brightRed">Privacy Policy</a>
+            </div>
           </div>
         </div>
 
-        <!-- List Container -->
-        <div class="flex justify-around space-x-32">
-          <div class="flex flex-col items-center space-y-4 text-white">
+        <!-- List Container (Mobile)-->
+        <div class="flex flex-col justify-around space-x-32 md:hidden">
+          <div
+            class="flex flex-col items-center space-y-4 text-white md:items-start"
+          >
             <a href="#" class="hover:text-brightRed">About Us</a>
             <a href="#" class="hover:text-brightRed">Contact</a>
             <a href="#" class="hover:text-brightRed">Blog</a>
@@ -364,16 +386,15 @@
           </div>
         </div>
 
-        <div class="flex justify-center md:justify-start">
+        <div class="flex justify-center md:flex-col">
           <a
             href="#"
-            class="baseline rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-11 pt-3 text-white hover:brightness-125 md:block"
+            class="baseline rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-6 text-center text-white hover:brightness-125 md:ml-auto md:block md:w-3/4"
             >Request Invite</a
           >
-        </div>
-
-        <div class="hidden text-lightGrayishBlue md:block">
-          © Easybank. All Rights Reserved
+          <div class="mt-6 hidden text-lightGrayishBlue md:block">
+            © Easybank. All Rights Reserved
+          </div>
         </div>
         <div class="mx-auto my-6 text-center text-lightGrayishBlue md:hidden">
           © Easybank. All Rights Reserved
