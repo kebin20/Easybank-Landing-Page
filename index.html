@@ -19,7 +19,7 @@
 
   <body class="font-family-sans overflow-x-hidden text-darkBlue">
     <!-- Navbar -->
-    <nav class="container fixed z-10 mx-auto mx-auto max-w-none bg-white p-5">
+    <nav class="container relative z-10 max-w-full bg-white p-5">
       <!-- Flex container -->
       <div class="flex items-center justify-between md:justify-around">
         <!-- Logo -->
@@ -81,11 +81,11 @@
     <section class="bg-veryLightGray" id="hero">
       <!-- Flex Container -->
       <div
-        class="container mx-auto flex flex-col-reverse items-center space-y-0 px-6 md:max-h-min md:flex-row md:space-y-0"
+        class="container mx-auto flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:justify-between"
       >
         <!-- Left item -->
-        <div class="mx-auto mb-28 flex flex-col space-y-8">
-          <h1 class="text-5xl max-w-md text-center md:text-left">
+        <div class="mb-28 flex flex-col space-y-8">
+          <h1 class="md:text-5xl max-w-md text-center text-4.5xl md:text-left">
             Next generation digital banking
           </h1>
           <p
@@ -106,7 +106,7 @@
         <!-- Image -->
         <img
           src="images/image-mockups.png"
-          class="relative -top-12 z-0"
+          class="relative -top-12 z-0 md:hidden"
           alt="picture of smartphones"
         />
       </div>
@@ -132,11 +132,11 @@
 
       <!-- List Items -->
       <div
-        class="mx-auto mt-14 flex flex-col space-y-8 md:w-4/5 md:w-5/6 md:flex-row md:space-y-0"
+        class="mx-auto mt-14 flex flex-col space-y-8 pb-16 md:w-4/5 md:w-5/6 md:flex-row md:gap-x-20 md:space-y-0"
       >
         <!-- List Item 1 -->
         <div
-          class="mx-auto flex flex-col space-y-3 md:w-5/6 md:flex-col md:items-start md:space-y-4"
+          class="mx-auto flex flex-col space-y-3 md:flex-col md:items-start md:space-y-4"
         >
           <!-- Heading -->
           <div class="flex flex-col items-center space-x-2">
