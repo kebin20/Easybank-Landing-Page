@@ -17,7 +17,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body class="font-family-sans text-darkBlue">
+  <body class="font-family-sans overflow-x-hidden text-darkBlue">
     <!-- Navbar -->
     <nav class="container fixed z-10 mx-auto max-w-none bg-white p-5">
       <!-- Flex container -->
@@ -47,7 +47,7 @@
         <!-- Button -->
         <a
           href="#"
-          class="baseline ml-60 hidden rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-6 pt-3 text-white hover:brightness-125 md:block"
+          class="baseline hidden rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-6 pt-3 text-white hover:brightness-125 md:block"
           >Request Invite</a
         >
 
@@ -81,14 +81,16 @@
     <section class="bg-veryLightGray" id="hero">
       <!-- Flex Container -->
       <div
-        class="container mx-auto flex flex-col-reverse space-y-0 px-6 md:flex-row md:items-end md:space-y-0 xl:items-center"
+        class="container mx-auto flex flex-col-reverse items-center space-y-0 px-6 md:max-h-min md:flex-row md:space-y-0"
       >
         <!-- Left item -->
         <div class="mx-auto mb-28 flex flex-col space-y-8">
-          <h1 class="text-center text-4.5xl md:text-left">
+          <h1 class="text-5xl max-w-md text-center md:text-left">
             Next generation digital banking
           </h1>
-          <p class="text-center text-base text-lightGrayishBlue md:text-left">
+          <p
+            class="max-w-sm text-center text-base text-lightGrayishBlue md:text-left"
+          >
             Take your financial life online. Your Easybank account will be a
             one-stop-shop for spending, saving, budgeting, investing, and much
             more.
@@ -102,13 +104,11 @@
           </div>
         </div>
         <!-- Image -->
-        <div>
-          <img
-            src="images/image-mockups.png"
-            class="relative -top-12 z-0 md:left-36"
-            alt="picture of smartphones"
-          />
-        </div>
+        <img
+          src="images/image-mockups.png"
+          class="relative -top-12 z-0"
+          alt="picture of smartphones"
+        />
       </div>
     </section>
 
@@ -116,16 +116,14 @@
     <section id="features" class="bg-gray-100">
       <!-- Flex container -->
       <div
-        class="container mx-auto flex flex-col space-y-12 px-4 md:flex-row md:space-y-0 md:px-0"
+        class="container mx-auto flex flex-col space-y-12 px-4 md:flex-row md:space-y-0"
       >
         <!-- Why choose? -->
-        <div class="flex flex-col space-y-6 md:w-1/2">
+        <div class="mx-auto flex flex-col space-y-6 md:w-5/6">
           <h2 class="text-4xl max-w-md pt-16 text-center md:text-left">
             Why choose Easybank?
           </h2>
-          <p
-            class="max-w-sm text-center text-lightGrayishBlue md:max-w-lg md:text-left"
-          >
+          <p class="max-w-sm text-center text-lightGrayishBlue md:text-left">
             We leverage Open Banking to turn your bank account into your
             financial hub. Control your finances like never before.
           </p>
@@ -134,11 +132,11 @@
 
       <!-- List Items -->
       <div
-        class="mx-auto mt-14 flex flex-col space-y-8 px-7 md:mx-auto md:w-4/5 md:flex-row"
+        class="mx-auto mt-14 flex flex-col space-y-8 md:w-4/5 md:flex-row md:space-y-0 md:w-5/6"
       >
         <!-- List Item 1 -->
         <div
-          class="flex flex-col space-y-3 md:mx-auto md:flex-col md:items-start md:space-y-4"
+          class="mx-auto flex flex-col space-y-3 md:flex-col md:items-start md:space-y-4 md:w-5/6"
         >
           <!-- Heading -->
           <div class="flex flex-col items-center space-x-2">
@@ -160,9 +158,7 @@
         </div>
 
         <!-- List Item 2-->
-        <div
-          class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
-        >
+        <div class="mx-auto flex flex-col space-y-3 md:flex-col md:items-start">
           <!-- Heading -->
           <div class="flex flex-col items-center space-x-2">
             <img
@@ -175,7 +171,7 @@
 
           <div>
             <h3 class="text-2xl mb-4 hidden md:block">Simple Budgeting</h3>
-            <p class="mx-auto text-center text-lightGrayishBlue">
+            <p class="mx-auto text-center text-lightGrayishBlue md:text-left">
               See exactly where your money goes each month. Receive
               notifications when you’re close to hitting your limits.
             </p>
@@ -183,9 +179,7 @@
         </div>
 
         <!-- List Item 3 -->
-        <div
-          class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
-        >
+        <div class="mx-auto flex flex-col space-y-3 md:flex-col md:items-start">
           <!-- Heading -->
           <div class="flex flex-col items-center space-x-2">
             <img
@@ -198,7 +192,7 @@
 
           <div>
             <h3 class="text-2xl mb-4 hidden md:block">Fast Onboarding</h3>
-            <p class="mx-auto text-center text-lightGrayishBlue">
+            <p class="mx-auto text-center text-lightGrayishBlue md:text-left">
               We don’t do branches. Open your account in minutes online and
               start taking control of your finances right away.
             </p>
@@ -206,9 +200,7 @@
         </div>
 
         <!-- List Item 4 -->
-        <div
-          class="flex flex-col space-y-3 pb-16 md:flex-row md:space-y-0 md:space-x-6"
-        >
+        <div class="mx-auto flex flex-col space-y-3 md:flex-col md:items-start">
           <!-- Heading -->
           <div class="flex flex-col items-center space-x-2">
             <img src="images/icon-api.svg" class="mb-2" alt="icon of api" />
@@ -217,7 +209,7 @@
 
           <div>
             <h3 class="text-2xl mb-4 hidden md:block">Open API</h3>
-            <p class="mx-auto text-center text-lightGrayishBlue">
+            <p class="mx-auto text-center text-lightGrayishBlue md:text-left">
               Manage your savings, investments, pension, and much more from one
               account. Tracking your money has never been easier.
             </p>
@@ -229,7 +221,7 @@
     <!-- Latest Articles -->
     <!-- Container to heading and testm blocks -->
     <section
-      class="mt-36 mb-24 flex flex-col md:flex-row md:space-x-6"
+      class="mx-auto mt-36 mb-24 flex flex-col md:flex-col md:space-x-6"
       id="articles"
     >
       <!-- Heading -->
