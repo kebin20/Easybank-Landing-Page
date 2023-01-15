@@ -8,6 +8,9 @@ module.exports = {
     },
     fontSize: {
        base: '18px',
+       '4.5xl': ['2.7rem', {
+        lineHeight: '1',
+      }],
     },
     screens: {
       sm: "375px",

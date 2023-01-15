@@ -9,7 +9,7 @@
   background-position: bottom 5em left 42em;
 }
 
-@media(max-width: 576px) {
+@media (max-width: 576px) {
   #hero {
     background-image: url("../images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
