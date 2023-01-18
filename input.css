@@ -15,7 +15,7 @@
 
 @media (max-width: 576px) {
   .hero-flex-container {
-    height: 75vh;
+    height: 100vh;
   }
 
   #hero {
