@@ -21,7 +21,9 @@
     <!-- Navbar -->
     <nav class="container relative z-10 max-w-full bg-white p-5">
       <!-- Flex container -->
-      <div class="flex items-center justify-between md:justify-around">
+      <div
+        class="flex items-center justify-between md:justify-around md:space-x-20"
+      >
         <!-- Logo -->
         <div>
           <img src="images/logo.svg" alt="easybank logo" />
@@ -78,13 +80,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="bg-veryLightGray" id="hero">
+    <section class="relative bg-veryLightGray" id="hero">
       <!-- Flex Container -->
       <div
-        class="container mx-auto flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:justify-between"
+        class="hero-flex-container container relative mx-auto flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:justify-between"
       >
         <!-- Left item -->
-        <div class="mb-28 flex flex-col space-y-8">
+        <div class="mb-20 flex flex-col space-y-8">
           <h1 class="md:text-5xl max-w-md text-center text-4.5xl md:text-left">
             Next generation digital banking
           </h1>
@@ -98,7 +100,7 @@
           <div class="flex justify-center md:justify-start">
             <a
               href="#"
-              class="baseline rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-6 pt-3 text-white hover:brightness-125 md:block"
+              class="baseline rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-10 pt-3 text-white hover:brightness-125 md:block"
               >Request Invite</a
             >
           </div>
@@ -106,17 +108,17 @@
         <!-- Image -->
         <img
           src="images/image-mockups.png"
-          class="relative -top-12 z-0 md:hidden"
+          class="relative -top-10 z-0 md:left-60"
           alt="picture of smartphones"
         />
       </div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="md:container-xl bg-gray-100 md:pb-20">
+    <section id="features" class="md:container-xl bg-gray-100 md:py-11">
       <!-- Flex container -->
       <div
-        class="container mx-auto flex flex-col space-y-12 px-4 md:flex-row md:space-y-0 md:pt-20"
+        class="container relative mx-auto flex flex-col space-y-12 px-6 md:flex-row md:space-y-0"
       >
         <!-- Why choose? -->
         <div class="flex flex-col space-y-6 md:w-2/5">
@@ -233,22 +235,22 @@
     <!-- Latest Articles -->
     <!-- Container to heading and testm blocks -->
     <section
-      class="container mx-auto mt-36 mb-24 flex flex-col md:items-center"
+      class="container mx-auto mt-24 mb-24 flex flex-col md:items-center"
       id="articles"
     >
       <!-- Heading -->
-      <h2 class="text-5xl text-center text-darkBlue md:mr-auto">
+      <h2 class="text-5xl text-center text-darkBlue md:mr-auto md:pl-6">
         Latest Articles
       </h2>
       <!-- Articles Container -->
       <div class="container mx-auto mt-10 flex flex-col md:flex-row">
         <!-- Article 1 -->
         <div
-          class="mx-6 mt-8 flex flex-col space-y-4 rounded-md pb-10 shadow-sm md:mx-0 md:mr-6 md:w-1/4"
+          class="mx-6 mt-8 flex flex-col space-y-4 rounded-md pb-10 shadow-sm md:w-1/4"
         >
           <img
             src="images/image-currency.jpg"
-            class="h-52 rounded-t-md"
+            class="rounded-t-md"
             alt="image of money/currency"
           />
           <p class="text-xs px-8 pt-3 text-lightGrayishBlue">
@@ -259,7 +261,7 @@
           </h5>
           <p class="text-sm px-8 text-lightGrayishBlue">
             The world is getting smaller and we’re becoming more mobile. So why
-            should you be forced to only receive money in a single …
+            should you be forced to only receive money in a single…
           </p>
         </div>
 
@@ -405,7 +407,7 @@
         <div class="flex justify-center md:flex-col">
           <a
             href="#"
-            class="baseline rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-6 text-center text-white hover:brightness-125 md:ml-auto md:block md:w-3/4"
+            class="baseline rounded-full bg-gradient-to-r from-limeGreen to-brightCyan p-3 px-10 text-center text-white hover:brightness-125 md:ml-auto md:block"
             >Request Invite</a
           >
           <div class="mt-6 hidden text-lightGrayishBlue md:block">

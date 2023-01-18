@@ -2,19 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.hero-flex-container {
+  height: 65vh;
+}
+
 #hero {
   background-image: url("../images/bg-intro-desktop.svg");
   background-repeat: no-repeat;
-  background-size: 90%;
-  background-position: bottom 5em left 42em;
+  background-size: cover;
+  background-position: bottom -1em left 42em;
 }
 
 @media (max-width: 576px) {
+  .hero-flex-container {
+    height: 75vh;
+  }
+
   #hero {
     background-image: url("../images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: 0% 0;
+    background-size: cover;
+    background-position: 0% -10em;
   }
 }
 
