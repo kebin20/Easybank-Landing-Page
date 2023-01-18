@@ -987,6 +987,22 @@ video {
     left: 15rem;
   }
 
+  .md\:left-64 {
+    left: 16rem;
+  }
+
+  .md\:left-72 {
+    left: 18rem;
+  }
+
+  .md\:left-96 {
+    left: 24rem;
+  }
+
+  .md\:left-80 {
+    left: 20rem;
+  }
+
   .md\:mx-6 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
