@@ -897,8 +897,8 @@ video {
 #hero {
   background-image: url("../images/bg-intro-desktop.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom -1em left 42em;
+  background-size: 80%;
+  background-position: bottom -20em left 44em;
 }
 
 @media (max-width: 576px) {
@@ -960,11 +960,6 @@ video {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
-}
-
-.hover\:bg-brightCyan:hover {
-  --tw-bg-opacity: 1;
-  background-color: hsl(192 70% 51% / var(--tw-bg-opacity));
 }
 
 .hover\:text-brightCyan:hover {
