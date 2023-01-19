@@ -235,107 +235,113 @@
     <!-- Latest Articles -->
     <!-- Container to heading and testm blocks -->
     <section
-      class="container mx-auto mt-24 mb-24 flex flex-col md:items-center"
+      class="container mx-auto flex flex-col px-6 py-20 md:items-center"
       id="articles"
     >
       <!-- Heading -->
-      <h2 class="text-5xl text-center text-darkBlue md:mr-auto md:pl-6">
+      <h2 class="text-4xl text-center text-darkBlue md:mr-auto">
         Latest Articles
       </h2>
       <!-- Articles Container -->
-      <div class="container mx-auto mt-10 flex flex-col md:flex-row">
+      <ul
+        class="container mx-auto flex flex-col gap-y-8 py-12 md:flex-row md:gap-x-8"
+      >
         <!-- Article 1 -->
-        <div
-          class="mx-6 mt-8 flex flex-col space-y-4 rounded-md pb-10 shadow-sm md:w-1/4"
-        >
-          <img
-            src="images/image-currency.jpg"
-            class="rounded-t-md"
-            alt="image of money/currency"
-          />
-          <p class="text-xs px-8 pt-3 text-lightGrayishBlue">
-            By Claire Robinson
-          </p>
-          <h5 class="text-xl px-8">
-            <a class="hover:text-brightCyan" href="">
-              Receive money in any currency with no fees</a
-            >
-          </h5>
-          <p class="text-sm px-8 text-lightGrayishBlue">
-            The world is getting smaller and we’re becoming more mobile. So why
-            should you be forced to only receive money in a single…
-          </p>
-        </div>
+        <li class="flex flex-col gap-y-4 rounded-md shadow-sm md:w-1/4">
+          <a class="hover:text-brightCyan" href="#">
+            <article>
+              <img
+                src="images/image-currency.jpg"
+                class="rounded-t-md"
+                alt="image of money/currency"
+              />
+              <div class="px-8 py-10">
+                <p class="text-xs text-lightGrayishBlue">By Claire Robinson</p>
+                <h4 class="text-xl py-6">
+                  Receive money in any currency with no fees
+                </h4>
+                <p class="text-sm text-lightGrayishBlue">
+                  The world is getting smaller and we’re becoming more mobile.
+                  So why should you be forced to only receive money in a single…
+                </p>
+              </div>
+            </article>
+          </a>
+        </li>
 
         <!-- Article 2 -->
-        <div
-          class="mx-6 mt-8 flex flex-col space-y-4 rounded-md pb-10 shadow-sm md:w-1/4"
-        >
-          <img
-            src="images/image-restaurant.jpg"
-            class="rounded-t-md object-cover"
-            alt="image of a restaurant"
-          />
-          <p class="text-xs px-8 pt-3 text-lightGrayishBlue">
-            By Wilson Hutton
-          </p>
-          <h5 class="text-xl px-8">
-            <a class="hover:text-brightCyan" href=""
-              >Treat yourself without worrying about money</a
-            >
-          </h5>
-          <p class="text-sm px-8 text-lightGrayishBlue">
-            Our simple budgeting feature allows you to separate out your
-            spending and set realistic limits each month. That means you…
-          </p>
-        </div>
+        <li class="flex flex-col gap-y-4 rounded-md shadow-sm md:w-1/4">
+          <a class="hover:text-brightCyan" href="#">
+            <article>
+              <img
+                src="images/image-restaurant.jpg"
+                class="rounded-t-md object-cover"
+                alt="image of a restaurant"
+              />
+              <div class="px-8 py-10">
+                <p class="text-xs pt-3 text-lightGrayishBlue">
+                  By Wilson Hutton
+                </p>
+                <h5 class="text-xl py-6">
+                  Treat yourself without worrying about money
+                </h5>
+                <p class="text-sm text-lightGrayishBlue">
+                  Our simple budgeting feature allows you to separate out your
+                  spending and set realistic limits each month. That means you…
+                </p>
+              </div>
+            </article>
+          </a>
+        </li>
 
         <!-- Article 3 -->
-        <div
-          class="mx-6 mt-8 flex flex-col space-y-4 rounded-md pb-10 shadow-sm md:w-1/4"
-        >
-          <img
-            src="images/image-plane.jpg"
-            class="rounded-t-md"
-            alt="image of a plane"
-          />
-          <p class="text-xs px-8 pt-3 text-lightGrayishBlue">
-            By Wilson Hutton
-          </p>
-          <h5 class="text-xl px-8">
-            <a class="hover:text-brightCyan" href=""
-              >Take your Easybank card wherever you go</a
-            >
-          </h5>
-          <p class="text-sm px-8 text-lightGrayishBlue">
-            We want you to enjoy your travels. This is why we don’t charge any
-            fees on purchases while you’re abroad. We’ll even show you…
-          </p>
-        </div>
+        <li class="flex flex-col gap-y-4 rounded-md shadow-sm md:w-1/4">
+          <a class="hover:text-brightCyan" href="#">
+            <article>
+              <img
+                src="images/image-plane.jpg"
+                class="rounded-t-md"
+                alt="image of a plane"
+              />
+              <div class="px-8 py-10">
+                <p class="text-xs text-lightGrayishBlue">By Wilson Hutton</p>
+                <h4 class="text-xl py-6">
+                  Take your Easybank card wherever you go
+                </h4>
+                <p class="text-sm text-lightGrayishBlue">
+                  We want you to enjoy your travels. This is why we don’t charge
+                  any fees on purchases while you’re abroad. We’ll even show
+                  you…
+                </p>
+              </div>
+            </article>
+          </a>
+        </li>
 
         <!-- Article 4 -->
-        <div
-          class="mx-6 mt-8 flex flex-col space-y-4 rounded-md pb-10 shadow-sm md:w-1/4"
-        >
-          <img
-            src="images/image-confetti.jpg"
-            class="rounded-t-md"
-            alt="image of confetti"
-          />
-          <p class="text-xs px-8 pt-3 text-lightGrayishBlue">
-            By Claire Robinson
-          </p>
-          <h5 class="text-xl px-8">
-            <a class="hover:text-brightCyan" href=""
-              >Our invite-only Beta accounts are now live!</a
-            >
-          </h5>
-          <p class="text-sm px-8 text-lightGrayishBlue">
-            After a lot of hard work by the whole team, we’re excited to launch
-            our closed beta. It’s easy to request an invite through the site ...
-          </p>
-        </div>
-      </div>
+        <li class="flex flex-col gap-y-4 rounded-md shadow-sm md:w-1/4">
+          <a class="hover:text-brightCyan" href="#">
+            <article>
+              <img
+                src="images/image-confetti.jpg"
+                class="rounded-t-md"
+                alt="image of confetti"
+              />
+              <div class="px-8 py-10">
+                <p class="text-xs text-lightGrayishBlue">By Claire Robinson</p>
+                <h4 class="text-xl py-6">
+                  Our invite-only Beta accounts are now live!
+                </h4>
+                <p class="text-sm text-lightGrayishBlue">
+                  After a lot of hard work by the whole team, we’re excited to
+                  launch our closed beta. It’s easy to request an invite through
+                  the site ...
+                </p>
+              </div>
+            </article>
+          </a>
+        </li>
+      </ul>
     </section>
 
     <!-- Footer -->
