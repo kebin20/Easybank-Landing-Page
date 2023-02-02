@@ -1,3 +1,5 @@
+![Page Layout](./screenshots/project.png)
+
 # Frontend Mentor - Easybank landing page solution
 
 This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -25,7 +27,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://kebin20.github.io/easybank-landing-page/)
-- Live Site URL: [Easybank Landing Page](hhttps://kebin20.github.io/easybank-landing-page/)
+- Live Site URL: [Easybank Landing Page](https://kebin20.github.io/easybank-landing-page/)
 
 ## My process
 
